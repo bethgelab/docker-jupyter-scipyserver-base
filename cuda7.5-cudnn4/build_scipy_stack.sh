@@ -24,11 +24,11 @@ for PYTHONVER in 2 3 ; do
   PYTHON="python$PYTHONVER"
   PIP="pip$PYTHONVER"
 
-  $PIP install --upgrade cython
+  $PIP install --no-cache-dir --upgrade cython
 
   # Build NumPy and SciPy from source against OpenBLAS installed
-  (cd numpy && $PIP install --quiet .)
-  (cd scipy && $PIP install --quiet .)
+  (cd numpy && $PIP install --no-cache-dir --quiet .)
+  (cd scipy && $PIP install --no-cache-dir --quiet .)
 done
 
 # Reduce the image size
