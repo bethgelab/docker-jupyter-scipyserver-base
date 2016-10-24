@@ -1,4 +1,4 @@
-FROM bethgelab/jupyter-notebook-x:cuda7.5-cudnn5
+FROM bethgelab/jupyter-notebook-x:cuda8.0-cudnn5
 
 MAINTAINER Bethge Lab <opensource@bethgelab.org>
 
